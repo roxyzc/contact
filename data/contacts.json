@@ -1,12 +1,1 @@
-[
-    {
-        "nama":"gokal",
-        "noHp": "081267801023",
-        "email": "example@example.com"
-    },
-    {
-        "nama":"roxyzc",
-        "noHp": "082312412211",
-        "email": "example@example.com"
-    }
-]
+[{"nama":"roxyzc","email":"example@gmail.com","noHp":"08121912123"},{"nama":"botem","email":"botem@botem.io","noHp":"081219101210"}]
