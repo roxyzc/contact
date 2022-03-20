@@ -26,12 +26,13 @@
                             <th scope="col">Nama</th>
                             <th scope="col">No Handphone</th>
                             <th scope="col">Email</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <% if (!contact) { %>
                         <tr>
-                            <td colspan="3">
+                            <td colspan="4">
                                 <div class="alert alert-danger" role="alert">
                                     DATA TIDAK DITEMUKAN
                                 </div>
@@ -42,6 +43,12 @@
                             <td><%= contact.nama %> </td>
                             <td><%= contact.noHp %></td>
                             <td><%= contact.email %></td>
+                            <td>
+                                <a href="/contact/delete/<%= contact.nama %>"
+                                    class="btn btn-danger badge rounded-2">Hapus</a>
+                                <a href="/contact/edit/<%= contact.nama %>"
+                                    class="btn btn-primary badge rounded-2">Edit</a>
+                            </td>
                         </tr>
                         <% } %>
                     </tbody>
